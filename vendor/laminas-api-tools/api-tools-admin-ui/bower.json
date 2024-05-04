@@ -1,0 +1,46 @@
+{
+    "name": "api-tools.admin.ui.php",
+    "version": "1.1dev",
+    "homepage": "https://api-tools.getlaminas.org",
+    "description": "Laminas API Tools Admin UI",
+    "main": "dist/api-tools-admin/index.html",
+    "keywords": [
+        "API"
+    ],
+    "license": "BSD-3-Clause",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "dist",
+        "node_modules",
+        "bower_components",
+        "src/vendor",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "angular": "~1.2.32",
+        "sass-bootstrap-glyphicons": "~1.0.0",
+        "angular-ui-bootstrap-bower": "~0.11.2",
+        "bootstrap": "~3.3.7",
+        "jquery": "~2.2.4",
+        "angular-ui-router": "~0.2.18",
+        "humps": "~0.4.2",
+        "ng-tags-input": "~2.3.0",
+        "angular-local-storage": "~0.1.5",
+        "angular-ui-tree": "~2.1.5",
+        "angular-ladda": "~0.1.15",
+        "angular-unsavedChanges": "~0.1.1",
+        "checklist-model": "~0.1.4",
+        "angular-bootstrap-toggle-switch": "~0.5.6",
+        "angular-ui-select": "~0.11.2",
+        "angular-sanitize": "1.2.32",
+        "angular-growl-v2": "~0.7.9"
+    },
+    "devDependencies": {
+        "angular-mocks": "~1.2.32"
+    },
+    "resolutions": {
+      "angular": "~1.2.32"
+    }
+}

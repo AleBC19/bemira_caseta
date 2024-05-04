@@ -1,0 +1,23 @@
+{
+    "name": "api-tools",
+    "version": "1.4.1",
+    "homepage": "https://api-tools.getlaminas.org",
+    "description": "Laminas API Tools Admin UI",
+    "keywords": [
+        "API"
+    ],
+    "license": "BSD-3-Clause",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "dist",
+        "node_modules",
+        "bower_components",
+        "vendor"
+    ],
+    "dependencies": {
+        "bootstrap": "~3.4.1",
+        "jquery": "~2.2.4",
+        "sass-bootstrap-glyphicons": "~1.0.0"
+    }
+}

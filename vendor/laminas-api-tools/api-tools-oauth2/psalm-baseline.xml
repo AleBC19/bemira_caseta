@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files psalm-version="4.23.0@f1fe6ff483bf325c803df9f510d09a03fd796f88">
+  <file src="bin/bcrypt.php">
+    <UnresolvableInclude occurrences="1">
+      <code>include $autoload</code>
+    </UnresolvableInclude>
+  </file>
+  <file src="src/Adapter/PdoAdapter.php">
+    <DocblockTypeContradiction occurrences="1">
+      <code>null === $this-&gt;bcrypt</code>
+    </DocblockTypeContradiction>
+    <ImplementedParamTypeMismatch occurrences="1">
+      <code>$grantTypes</code>
+    </ImplementedParamTypeMismatch>
+    <MixedArgument occurrences="8">
+      <code>$config['bcrypt_cost']</code>
+      <code>$result['client_secret']</code>
+      <code>$this-&gt;config['client_table']</code>
+      <code>$this-&gt;config['client_table']</code>
+      <code>$this-&gt;config['client_table']</code>
+      <code>$this-&gt;config['user_table']</code>
+      <code>$this-&gt;config['user_table']</code>
+      <code>$user['password']</code>
+    </MixedArgument>
+    <ParamNameMismatch occurrences="8">
+      <code>$clientId</code>
+      <code>$clientId</code>
+      <code>$clientSecret</code>
+      <code>$clientSecret</code>
+      <code>$grantTypes</code>
+      <code>$redirectUri</code>
+      <code>$scopeOrUserId</code>
+      <code>$userId</code>
+    </ParamNameMismatch>
+    <PossiblyNullArgument occurrences="1">
+      <code>$clientSecret</code>
+    </PossiblyNullArgument>
+    <PropertyNotSetInConstructor occurrences="1">
+      <code>$bcrypt</code>
+    </PropertyNotSetInConstructor>
+    <RedundantCastGivenDocblockType occurrences="1">
+      <code>(int) $value</code>
+    </RedundantCastGivenDocblockType>
+  </file>
+  <file src="src/Controller/AuthController.php">
+    <ArgumentTypeCoercion occurrences="4">
+      <code>$response</code>
+      <code>$response</code>
+      <code>$response</code>
+      <code>$response</code>
+    </ArgumentTypeCoercion>
+    <DocblockTypeContradiction occurrences="1">
+      <code>is_object($serverFactory)</code>
+    </DocblockTypeContradiction>
+    <InvalidCatch occurrences="1"/>
+    <LessSpecificReturnStatement occurrences="7">
+      <code>$httpResponse</code>
+      <code>$this-&gt;getErrorResponse($response)</code>
+      <code>$this-&gt;getErrorResponse($response)</code>
+      <code>$this-&gt;getErrorResponse($response)</code>
+      <code>$this-&gt;getErrorResponse($response)</code>
+      <code>$this-&gt;getResponse()</code>
+      <code>$this-&gt;getResponse()</code>
+    </LessSpecificReturnStatement>
+    <MixedArgument occurrences="13">
+      <code>$bodyParams</code>
+      <code>$error</code>
+      <code>$errorDescription</code>
+      <code>$errorUri</code>
+      <code>$headers</code>
+      <code>$laminasRequest-&gt;getContent()</code>
+      <code>$laminasRequest-&gt;getQuery()-&gt;toArray()</code>
+      <code>$redirect</code>
+      <code>$server</code>
+      <code>$serverFactory</code>
+      <code>$this-&gt;params('oauth')</code>
+      <code>$this-&gt;params('oauth')</code>
+      <code>$this-&gt;params('oauth')</code>
+    </MixedArgument>
+    <MixedArrayAccess occurrences="2">
+      <code>$server['PHP_AUTH_PW']</code>
+      <code>$server['PHP_AUTH_USER']</code>
+    </MixedArrayAccess>
+    <MixedArrayAssignment occurrences="3">
+      <code>$headers['PHP_AUTH_PW']</code>
+      <code>$headers['PHP_AUTH_USER']</code>
+      <code>$server['REQUEST_METHOD']</code>
+    </MixedArrayAssignment>
+    <MixedAssignment occurrences="14">
+      <code>$authorized</code>
+      <code>$bodyParams</code>
+      <code>$clientId</code>
+      <code>$code</code>
+      <code>$error</code>
+      <code>$errorDescription</code>
+      <code>$errorUri</code>
+      <code>$headers</code>
+      <code>$headers</code>
+      <code>$headers['PHP_AUTH_PW']</code>
+      <code>$headers['PHP_AUTH_USER']</code>
+      <code>$redirect</code>
+      <code>$server</code>
+      <code>$server['REQUEST_METHOD']</code>
+    </MixedAssignment>
+    <MixedMethodCall occurrences="8">
+      <code>addHeaders</code>
+      <code>fromQuery</code>
+      <code>get</code>
+      <code>getFieldValue</code>
+      <code>has</code>
+      <code>toArray</code>
+      <code>toArray</code>
+      <code>toArray</code>
+    </MixedMethodCall>
+    <MoreSpecificReturnType occurrences="4">
+      <code>?Response</code>
+      <code>?Response</code>
+      <code>Response</code>
+      <code>Response|ViewModel</code>
+    </MoreSpecificReturnType>
+    <PossiblyNullArgument occurrences="1">
+      <code>$errorDescription</code>
+    </PossiblyNullArgument>
+    <PossiblyUndefinedMethod occurrences="1">
+      <code>isClientError</code>
+    </PossiblyUndefinedMethod>
+    <PropertyNotSetInConstructor occurrences="6">
+      <code>$server</code>
+      <code>AuthController</code>
+      <code>AuthController</code>
+      <code>AuthController</code>
+      <code>AuthController</code>
+      <code>AuthController</code>
+    </PropertyNotSetInConstructor>
+    <RedundantCastGivenDocblockType occurrences="1">
+      <code>(bool) $apiProblemErrorResponse</code>
+    </RedundantCastGivenDocblockType>
+    <RedundantConditionGivenDocblockType occurrences="2">
+      <code>$this-&gt;server instanceof OAuth2Server</code>
+      <code>gettype($serverFactory)</code>
+    </RedundantConditionGivenDocblockType>
+    <UndefinedDocblockClass occurrences="1">
+      <code>$response-&gt;isClientError()</code>
+    </UndefinedDocblockClass>
+    <UndefinedInterfaceMethod occurrences="6">
+      <code>getHeaders</code>
+      <code>getHeaders</code>
+      <code>getMethod</code>
+      <code>getQuery</code>
+      <code>isClientError</code>
+      <code>setStatusCode</code>
+    </UndefinedInterfaceMethod>
+    <UndefinedMagicMethod occurrences="1">
+      <code>bodyParams</code>
+    </UndefinedMagicMethod>
+  </file>
+  <file src="src/Factory/AuthControllerFactory.php">
+    <DeprecatedInterface occurrences="1">
+      <code>AuthControllerFactory</code>
+    </DeprecatedInterface>
+    <MixedArgument occurrences="2">
+      <code>$container-&gt;get(UserId::class)</code>
+      <code>UserId::class</code>
+    </MixedArgument>
+    <MixedArrayAccess occurrences="1">
+      <code>$config['api-tools-oauth2']['api_problem_error_response']</code>
+    </MixedArrayAccess>
+    <MixedAssignment occurrences="1">
+      <code>$config</code>
+    </MixedAssignment>
+    <MixedInferredReturnType occurrences="1">
+      <code>callable</code>
+    </MixedInferredReturnType>
+    <MixedReturnStatement occurrences="1">
+      <code>$oauth2ServerFactory</code>
+    </MixedReturnStatement>
+    <ParamNameMismatch occurrences="1">
+      <code>$controllers</code>
+    </ParamNameMismatch>
+    <UndefinedClass occurrences="1">
+      <code>UserId</code>
+    </UndefinedClass>
+  </file>
+  <file src="src/Factory/OAuth2ServerFactory.php">
+    <MixedArgument occurrences="1">
+      <code>$config</code>
+    </MixedArgument>
+    <MixedArrayAccess occurrences="1">
+      <code>$config['api-tools-oauth2']</code>
+    </MixedArrayAccess>
+    <MixedAssignment occurrences="2">
+      <code>$config</code>
+      <code>$config</code>
+    </MixedAssignment>
+  </file>
+  <file src="src/Factory/OAuth2ServerInstanceFactory.php">
+    <ArgumentTypeCoercion occurrences="5">
+      <code>$server-&gt;getStorage('authorization_code')</code>
+      <code>$server-&gt;getStorage('client_credentials')</code>
+      <code>$server-&gt;getStorage('jwt_bearer')</code>
+      <code>$server-&gt;getStorage('refresh_token')</code>
+      <code>$server-&gt;getStorage('user_credentials')</code>
+    </ArgumentTypeCoercion>
+    <MixedArgument occurrences="3">
+      <code>$audience</code>
+      <code>$options</code>
+      <code>$storagesService</code>
+    </MixedArgument>
+    <MixedAssignment occurrences="11">
+      <code>$accessLifetime</code>
+      <code>$allowImplicit</code>
+      <code>$audience</code>
+      <code>$availableGrantTypes</code>
+      <code>$clientOptions['allow_credentials_in_request_body']</code>
+      <code>$enforceState</code>
+      <code>$options</code>
+      <code>$refreshOptions['always_issue_new_refresh_token']</code>
+      <code>$refreshOptions['unset_refresh_token_after_use']</code>
+      <code>$storage[$storageKey]</code>
+      <code>$storagesService</code>
+    </MixedAssignment>
+    <PossiblyNullArgument occurrences="5">
+      <code>$server-&gt;getStorage('authorization_code')</code>
+      <code>$server-&gt;getStorage('client_credentials')</code>
+      <code>$server-&gt;getStorage('jwt_bearer')</code>
+      <code>$server-&gt;getStorage('refresh_token')</code>
+      <code>$server-&gt;getStorage('user_credentials')</code>
+    </PossiblyNullArgument>
+    <PropertyTypeCoercion occurrences="1">
+      <code>$services</code>
+    </PropertyTypeCoercion>
+  </file>
+  <file src="src/Factory/PdoAdapterFactory.php">
+    <InvalidArgument occurrences="1"/>
+    <InvalidCast occurrences="1"/>
+    <MixedArrayAccess occurrences="5">
+      <code>$config['api-tools-oauth2']</code>
+      <code>$oauthConfig['db']</code>
+      <code>$oauthConfig['db']</code>
+      <code>$oauthConfig['db']</code>
+      <code>$oauthConfig['db']</code>
+    </MixedArrayAccess>
+    <MixedAssignment occurrences="5">
+      <code>$config</code>
+      <code>$oauthConfig</code>
+      <code>$options</code>
+      <code>$password</code>
+      <code>$username</code>
+    </MixedAssignment>
+  </file>
+  <file src="src/Module.php">
+    <MixedInferredReturnType occurrences="1">
+      <code>array</code>
+    </MixedInferredReturnType>
+    <MixedReturnStatement occurrences="1">
+      <code>include __DIR__ . '/../config/module.config.php'</code>
+    </MixedReturnStatement>
+  </file>
+  <file src="src/Provider/UserId/AuthenticationService.php">
+    <DocblockTypeContradiction occurrences="1">
+      <code>null === $this-&gt;authenticationService</code>
+    </DocblockTypeContradiction>
+    <MixedAssignment occurrences="2">
+      <code>$identity</code>
+      <code>$this-&gt;userId</code>
+    </MixedAssignment>
+    <PossiblyNullPropertyAssignmentValue occurrences="1">
+      <code>$service</code>
+    </PossiblyNullPropertyAssignmentValue>
+  </file>
+  <file src="src/Provider/UserId/AuthenticationServiceFactory.php">
+    <MixedArgument occurrences="3">
+      <code>$config</code>
+      <code>$config</code>
+      <code>$container-&gt;get(\Laminas\Authentication\AuthenticationService::class)</code>
+    </MixedArgument>
+    <MixedAssignment occurrences="1">
+      <code>$config</code>
+    </MixedAssignment>
+  </file>
+  <file src="test/Adapter/Pdo/AbstractBaseTest.php">
+    <LessSpecificReturnStatement occurrences="1">
+      <code>[[$pdo]]</code>
+    </LessSpecificReturnStatement>
+    <MixedArgument occurrences="1">
+      <code>$pdo</code>
+    </MixedArgument>
+    <MixedAssignment occurrences="2">
+      <code>$db</code>
+      <code>$pdo</code>
+    </MixedAssignment>
+    <MixedMethodCall occurrences="1">
+      <code>exec</code>
+    </MixedMethodCall>
+    <MoreSpecificReturnType occurrences="1">
+      <code>array&lt;array-key, array{0: PdoAdapter}&gt;</code>
+    </MoreSpecificReturnType>
+    <UndefinedInterfaceMethod occurrences="1">
+      <code>setAllowOverride</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="test/Adapter/Pdo/AccessTokenTest.php">
+    <UndefinedClass occurrences="1">
+      <code>NullStorage</code>
+    </UndefinedClass>
+  </file>
+  <file src="test/Adapter/Pdo/AuthorizationCodeTest.php">
+    <UndefinedClass occurrences="3">
+      <code>NullStorage</code>
+      <code>NullStorage</code>
+      <code>NullStorage</code>
+    </UndefinedClass>
+  </file>
+  <file src="test/Adapter/Pdo/ClientCredentialsTest.php">
+    <UndefinedClass occurrences="1">
+      <code>NullStorage</code>
+    </UndefinedClass>
+  </file>
+  <file src="test/Adapter/Pdo/ClientTest.php">
+    <UndefinedClass occurrences="4">
+      <code>NullStorage</code>
+      <code>NullStorage</code>
+      <code>NullStorage</code>
+      <code>NullStorage</code>
+    </UndefinedClass>
+    <UndefinedInterfaceMethod occurrences="2">
+      <code>isPublicClient</code>
+      <code>isPublicClient</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="test/Adapter/Pdo/JwtAccessTokenTest.php">
+    <UnevaluatedCode occurrences="9">
+      <code>$audience = 'http://unittest';</code>
+      <code>$clientId = 'oauth_test_client';</code>
+      <code>$expires = $expires-&gt;format('U');</code>
+      <code>$expires = new DateTime('today +1 day');</code>
+      <code>$jti      = 'jti';</code>
+      <code>$storage-&gt;getJti($clientId, $subject, $audience, $expires, $jti);</code>
+      <code>$subject  = 'jtisubject';</code>
+      <code>$this-&gt;assertFalse($storage-&gt;getJti($clientId, $subject, $audience, $expires, 'invlalid'));</code>
+      <code>$this-&gt;assertTrue($storage-&gt;setJti($clientId, $subject, $audience, $expires, $jti));</code>
+    </UnevaluatedCode>
+  </file>
+  <file src="test/Adapter/Pdo/JwtBearerTest.php">
+    <UnevaluatedCode occurrences="8">
+      <code>$key = $storage-&gt;getClientKey('oauth_test_client', 'nor-is-this');</code>
+      <code>$key = $storage-&gt;getClientKey('oauth_test_client', 'test_subject');</code>
+      <code>$key = $storage-&gt;getClientKey('this-is-not-real', 'nor-is-this');</code>
+      <code>$this-&gt;assertFalse($key);</code>
+      <code>$this-&gt;assertFalse($key);</code>
+      <code>$this-&gt;assertNotNull($key);</code>
+    </UnevaluatedCode>
+  </file>
+  <file src="test/Adapter/Pdo/PublicKeyTest.php">
+    <UnevaluatedCode occurrences="11">
+      <code>$globalPrivateKey = file_get_contents(__DIR__ . '/../../TestAsset/data/key.pem');</code>
+      <code>$globalPublicKey  = file_get_contents(__DIR__ . '/../../TestAsset/data/pubkey.pem');</code>
+      <code>$this-&gt;assertEquals($globalPrivateKey, $storage-&gt;getPrivateKey('oauth_test_client'));</code>
+      <code>$this-&gt;assertEquals($globalPublicKey, $storage-&gt;getPublicKey('oauth_test_client'));</code>
+      <code>$this-&gt;assertEquals('rsa', $storage-&gt;getEncryptionAlgorithm('oauth_test_client'));</code>
+      <code>$this-&gt;assertFalse($storage-&gt;getEncryptionAlgorithm('invalidclient'));</code>
+      <code>$this-&gt;assertFalse($storage-&gt;getEncryptionAlgorithm('oauth_test_client2'));</code>
+      <code>$this-&gt;assertFalse($storage-&gt;getPrivateKey('invalidclient'));</code>
+      <code>$this-&gt;assertFalse($storage-&gt;getPrivateKey('oauth_test_client2'));</code>
+      <code>$this-&gt;assertFalse($storage-&gt;getPublicKey('invalidclient'));</code>
+      <code>$this-&gt;assertFalse($storage-&gt;getPublicKey('oauth_test_client2'));</code>
+    </UnevaluatedCode>
+  </file>
+  <file src="test/Adapter/Pdo/RefreshTokenTest.php">
+    <UndefinedClass occurrences="1">
+      <code>NullStorage</code>
+    </UndefinedClass>
+  </file>
+  <file src="test/Adapter/Pdo/ScopeTest.php">
+    <UndefinedClass occurrences="2">
+      <code>NullStorage</code>
+      <code>NullStorage</code>
+    </UndefinedClass>
+  </file>
+  <file src="test/Adapter/Pdo/UserCredentialsTest.php">
+    <UndefinedClass occurrences="1">
+      <code>NullStorage</code>
+    </UndefinedClass>
+    <UnevaluatedCode occurrences="10">
+      <code>$claims = $storage-&gt;getUserClaims('oauth_test_user', 'address');</code>
+      <code>$claims = $storage-&gt;getUserClaims('oauth_test_user', 'email');</code>
+      <code>$claims = $storage-&gt;getUserClaims('oauth_test_user', 'phone');</code>
+      <code>$claims = $storage-&gt;getUserClaims('oauth_test_user', 'profile');</code>
+      <code>$this-&gt;assertFalse($claims = $storage-&gt;getUserClaims('invalid', 'invalid'));</code>
+      <code>$this-&gt;assertFalse($storage-&gt;getUserClaims('oauth_test_user', 'invalid'));</code>
+      <code>$this-&gt;assertTrue(is_array($claims));</code>
+      <code>$this-&gt;assertTrue(is_array($claims));</code>
+      <code>$this-&gt;assertTrue(is_array($claims));</code>
+      <code>$this-&gt;assertTrue(is_array($claims));</code>
+    </UnevaluatedCode>
+  </file>
+  <file src="test/Controller/AuthControllerTest.php">
+    <ArgumentTypeCoercion occurrences="2">
+      <code>$request</code>
+      <code>$request</code>
+    </ArgumentTypeCoercion>
+    <DeprecatedMethod occurrences="1">
+      <code>getSqlStringForSqlObject</code>
+    </DeprecatedMethod>
+    <MixedArgument occurrences="17">
+      <code>$adapter</code>
+      <code>$adapter::QUERY_MODE_EXECUTE</code>
+      <code>$location</code>
+      <code>$location</code>
+      <code>$pdo</code>
+      <code>$r-&gt;getValue($adapter)</code>
+      <code>$this-&gt;getResponse()-&gt;getContent()</code>
+      <code>$this-&gt;getResponse()-&gt;getContent()</code>
+      <code>$this-&gt;getResponse()-&gt;getContent()</code>
+      <code>$this-&gt;getResponse()-&gt;getContent()</code>
+      <code>$this-&gt;getResponse()-&gt;getContent()</code>
+      <code>$this-&gt;getResponse()-&gt;getContent()</code>
+      <code>$this-&gt;getResponse()-&gt;getContent()</code>
+      <code>$this-&gt;getResponse()-&gt;getContent()</code>
+      <code>$this-&gt;getResponse()-&gt;getContent()</code>
+      <code>$this-&gt;getResponse()-&gt;getContent()</code>
+      <code>$this-&gt;getResponse()-&gt;getContent()</code>
+    </MixedArgument>
+    <MixedArrayAccess occurrences="25">
+      <code>$config['api-tools-oauth2']</code>
+      <code>$config['api-tools-oauth2']</code>
+      <code>$oauthConfig['allow_implicit']</code>
+      <code>$post['access_token']</code>
+      <code>$post['grant_type']</code>
+      <code>$response['detail']</code>
+      <code>$response['detail']</code>
+      <code>$response['detail']</code>
+      <code>$response['error']</code>
+      <code>$response['error']</code>
+      <code>$response['error_description']</code>
+      <code>$response['error_description']</code>
+      <code>$response['message']</code>
+      <code>$response['message']</code>
+      <code>$response['status']</code>
+      <code>$response['status']</code>
+      <code>$response['status']</code>
+      <code>$response['success']</code>
+      <code>$response['success']</code>
+      <code>$response['title']</code>
+      <code>$response['title']</code>
+      <code>$response['title']</code>
+      <code>$results[0]</code>
+      <code>$server['PHP_AUTH_PW']</code>
+      <code>$server['PHP_AUTH_USER']</code>
+    </MixedArrayAccess>
+    <MixedArrayAssignment occurrences="1">
+      <code>$config['api-tools-oauth2']</code>
+    </MixedArrayAssignment>
+    <MixedAssignment occurrences="20">
+      <code>$adapter</code>
+      <code>$allowImplicit</code>
+      <code>$config</code>
+      <code>$config</code>
+      <code>$db</code>
+      <code>$location</code>
+      <code>$location</code>
+      <code>$oauthConfig</code>
+      <code>$pdo</code>
+      <code>$post</code>
+      <code>$response</code>
+      <code>$response</code>
+      <code>$response</code>
+      <code>$response</code>
+      <code>$response</code>
+      <code>$response</code>
+      <code>$response</code>
+      <code>$results</code>
+      <code>$server</code>
+      <code>$token</code>
+    </MixedAssignment>
+    <MixedMethodCall occurrences="32">
+      <code>addHeaderLine</code>
+      <code>exec</code>
+      <code>set</code>
+      <code>set</code>
+      <code>set</code>
+      <code>set</code>
+      <code>set</code>
+      <code>set</code>
+      <code>set</code>
+      <code>set</code>
+      <code>set</code>
+      <code>set</code>
+      <code>set</code>
+      <code>set</code>
+      <code>set</code>
+      <code>set</code>
+      <code>set</code>
+      <code>set</code>
+      <code>set</code>
+      <code>set</code>
+      <code>set</code>
+      <code>set</code>
+      <code>set</code>
+      <code>set</code>
+      <code>set</code>
+      <code>set</code>
+      <code>set</code>
+      <code>set</code>
+      <code>set</code>
+      <code>set</code>
+      <code>set</code>
+      <code>set</code>
+    </MixedMethodCall>
+    <MixedOperand occurrences="1">
+      <code>$token</code>
+    </MixedOperand>
+    <PossiblyInvalidArgument occurrences="2">
+      <code>$adapter</code>
+      <code>$response</code>
+    </PossiblyInvalidArgument>
+    <PossiblyInvalidMethodCall occurrences="8">
+      <code>addHeaderLine</code>
+      <code>getFieldValue</code>
+      <code>getFieldValue</code>
+      <code>getFieldValue</code>
+      <code>getFieldValue</code>
+      <code>getFieldValue</code>
+      <code>getUri</code>
+      <code>getUri</code>
+    </PossiblyInvalidMethodCall>
+    <PossiblyUndefinedMethod occurrences="7">
+      <code>addHeaderLine</code>
+      <code>getFieldValue</code>
+      <code>getFieldValue</code>
+      <code>getFieldValue</code>
+      <code>getFieldValue</code>
+      <code>getFieldValue</code>
+      <code>toArray</code>
+    </PossiblyUndefinedMethod>
+    <PossiblyUndefinedVariable occurrences="2">
+      <code>$code</code>
+      <code>$code</code>
+    </PossiblyUndefinedVariable>
+    <UndefinedInterfaceMethod occurrences="44">
+      <code>bootstrap</code>
+      <code>bootstrap</code>
+      <code>bootstrap</code>
+      <code>getConfig</code>
+      <code>getHeaders</code>
+      <code>getPost</code>
+      <code>getPost</code>
+      <code>getPost</code>
+      <code>getPost</code>
+      <code>getPost</code>
+      <code>getPost</code>
+      <code>getPost</code>
+      <code>getPost</code>
+      <code>getPost</code>
+      <code>getPost</code>
+      <code>getQuery</code>
+      <code>getQuery</code>
+      <code>getQuery</code>
+      <code>getQuery</code>
+      <code>getServer</code>
+      <code>getServer</code>
+      <code>getServer</code>
+      <code>getServer</code>
+      <code>getServer</code>
+      <code>getServer</code>
+      <code>getServer</code>
+      <code>getServer</code>
+      <code>getServer</code>
+      <code>getServer</code>
+      <code>getServer</code>
+      <code>getServer</code>
+      <code>setAllowOverride</code>
+      <code>setMethod</code>
+      <code>setMethod</code>
+      <code>setMethod</code>
+      <code>setMethod</code>
+      <code>setMethod</code>
+      <code>setMethod</code>
+      <code>setMethod</code>
+      <code>setMethod</code>
+      <code>setMethod</code>
+      <code>setPost</code>
+      <code>setQuery</code>
+      <code>setService</code>
+    </UndefinedInterfaceMethod>
+    <UndefinedMethod occurrences="2">
+      <code>getUri</code>
+      <code>getUri</code>
+    </UndefinedMethod>
+  </file>
+  <file src="test/Controller/AuthControllerWithCustomAdapterTest.php">
+    <MixedArgument occurrences="1">
+      <code>$this-&gt;getResponse()-&gt;getContent()</code>
+    </MixedArgument>
+    <MixedArrayAccess occurrences="3">
+      <code>$response['detail']</code>
+      <code>$response['status']</code>
+      <code>$response['title']</code>
+    </MixedArrayAccess>
+    <MixedAssignment occurrences="1">
+      <code>$response</code>
+    </MixedAssignment>
+    <MixedMethodCall occurrences="4">
+      <code>set</code>
+      <code>set</code>
+      <code>set</code>
+      <code>set</code>
+    </MixedMethodCall>
+    <PossiblyInvalidMethodCall occurrences="1">
+      <code>getFieldValue</code>
+    </PossiblyInvalidMethodCall>
+    <PossiblyUndefinedMethod occurrences="1">
+      <code>getFieldValue</code>
+    </PossiblyUndefinedMethod>
+  </file>
+  <file src="test/Controller/AuthControllerWithLaminasAuthenticationServiceTest.php">
+    <MixedArgument occurrences="4">
+      <code>$code</code>
+      <code>$location</code>
+      <code>$pdo</code>
+      <code>$this-&gt;getResponse()-&gt;getContent()</code>
+    </MixedArgument>
+    <MixedArrayAccess occurrences="2">
+      <code>$response['access_token']</code>
+      <code>$row['user_id']</code>
+    </MixedArrayAccess>
+    <MixedAssignment occurrences="6">
+      <code>$authentication</code>
+      <code>$db</code>
+      <code>$location</code>
+      <code>$pdo</code>
+      <code>$row</code>
+      <code>$this-&gt;db</code>
+    </MixedAssignment>
+    <MixedInferredReturnType occurrences="1">
+      <code>AuthenticationService</code>
+    </MixedInferredReturnType>
+    <MixedMethodCall occurrences="9">
+      <code>andReturn</code>
+      <code>andReturn</code>
+      <code>exec</code>
+      <code>set</code>
+      <code>set</code>
+      <code>set</code>
+      <code>set</code>
+      <code>set</code>
+      <code>setStorage</code>
+    </MixedMethodCall>
+    <MixedReturnStatement occurrences="1">
+      <code>$authentication</code>
+    </MixedReturnStatement>
+    <PossiblyInvalidMethodCall occurrences="1">
+      <code>getUri</code>
+    </PossiblyInvalidMethodCall>
+    <PossiblyUndefinedMethod occurrences="2">
+      <code>once</code>
+      <code>once</code>
+    </PossiblyUndefinedMethod>
+    <PossiblyUndefinedVariable occurrences="2">
+      <code>$code</code>
+      <code>$code</code>
+    </PossiblyUndefinedVariable>
+    <UndefinedInterfaceMethod occurrences="9">
+      <code>bootstrap</code>
+      <code>getPost</code>
+      <code>getPost</code>
+      <code>getPost</code>
+      <code>getServer</code>
+      <code>getServer</code>
+      <code>setMethod</code>
+      <code>setPost</code>
+      <code>setQuery</code>
+    </UndefinedInterfaceMethod>
+    <UndefinedMagicMethod occurrences="2">
+      <code>once</code>
+      <code>once</code>
+    </UndefinedMagicMethod>
+    <UndefinedMethod occurrences="1">
+      <code>getUri</code>
+    </UndefinedMethod>
+  </file>
+  <file src="test/Controller/CustomAdapter.php">
+    <MixedInferredReturnType occurrences="1">
+      <code>bool</code>
+    </MixedInferredReturnType>
+    <MixedReturnStatement occurrences="1">
+      <code>parent::checkUserCredentials($username, $password)</code>
+    </MixedReturnStatement>
+    <ParamNameMismatch occurrences="1">
+      <code>$clientId</code>
+    </ParamNameMismatch>
+  </file>
+  <file src="test/Controller/TestAsset/CustomProblemDetailsException.php">
+    <MissingConstructor occurrences="2">
+      <code>$title</code>
+      <code>$type</code>
+    </MissingConstructor>
+  </file>
+  <file src="test/Factory/OAuth2ServerFactoryTest.php">
+    <MixedArgument occurrences="1">
+      <code>constant('HHVM_VERSION')</code>
+    </MixedArgument>
+    <TooManyArguments occurrences="1">
+      <code>$smFactory</code>
+    </TooManyArguments>
+  </file>
+  <file src="test/Factory/PdoAdapterFactoryTest.php">
+    <MixedArrayAccess occurrences="1">
+      <code>$config['user_table']</code>
+    </MixedArrayAccess>
+    <MixedAssignment occurrences="1">
+      <code>$config</code>
+    </MixedAssignment>
+  </file>
+</files>

@@ -1,0 +1,77 @@
+{
+    "name": "laminas-api-tools/api-tools-mvc-auth",
+    "description": "Laminas Module providing Authentication and Authorization events and infrastructure",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "laminas",
+        "api-tools",
+        "module"
+    ],
+    "homepage": "https://api-tools.getlaminas.org",
+    "support": {
+        "docs": "https://api-tools.getlaminas.org/documentation",
+        "issues": "https://github.com/laminas-api-tools/api-tools-mvc-auth/issues",
+        "source": "https://github.com/laminas-api-tools/api-tools-mvc-auth",
+        "rss": "https://github.com/laminas-api-tools/api-tools-mvc-auth/releases.atom",
+        "chat": "https://laminas.dev/chat",
+        "forum": "https://discourse.laminas.dev"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "extra": {
+        "laminas": {
+            "module": "Laminas\\ApiTools\\MvcAuth"
+        }
+    },
+    "require": {
+        "php": "^7.3 || ~8.0.0 || ~8.1.0",
+        "laminas-api-tools/api-tools-api-problem": "^1.4.0",
+        "laminas-api-tools/api-tools-content-negotiation": "^1.5.0",
+        "laminas-api-tools/api-tools-oauth2": "^1.7",
+        "laminas/laminas-authentication": "^2.5.3",
+        "laminas/laminas-eventmanager": "^3.2",
+        "laminas/laminas-http": "^2.5.4",
+        "laminas/laminas-mvc": "^2.7.9 || ^3.0.2",
+        "laminas/laminas-permissions-acl": "^2.6",
+        "laminas/laminas-permissions-rbac": "^2.6.0 || ^3.0",
+        "laminas/laminas-servicemanager": "^2.7.6 || ^3.1",
+        "laminas/laminas-stdlib": "^2.7.8 || ^3.0.1",
+        "laminas/laminas-zendframework-bridge": "^1.1"
+    },
+    "require-dev": {
+        "laminas/laminas-coding-standard": "~2.3.0",
+        "laminas/laminas-session": "^2.8.5",
+        "phpspec/prophecy-phpunit": "^2.0",
+        "phpunit/phpunit": "^9.3",
+        "psalm/plugin-phpunit": "^0.16.0",
+        "vimeo/psalm": "^4.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Laminas\\ApiTools\\MvcAuth\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LaminasTest\\ApiTools\\MvcAuth\\": "test/"
+        }
+    },
+    "scripts": {
+        "check": [
+            "@cs-check",
+            "@test"
+        ],
+        "cs-check": "phpcs",
+        "cs-fix": "phpcbf",
+        "static-analysis": "psalm --shepherd --stats",
+        "test": "phpunit --colors=always",
+        "test-coverage": "phpunit --colors=always --coverage-clover clover.xml"
+    },
+    "replace": {
+        "zfcampus/zf-mvc-auth": "^1.5.1"
+    }
+}

@@ -1,0 +1,79 @@
+{
+    "name": "laminas-api-tools/api-tools-rest",
+    "description": "Laminas Module providing structure for RESTful resources",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "laminas",
+        "api-tools",
+        "laminas3",
+        "module",
+        "rest"
+    ],
+    "homepage": "https://api-tools.getlaminas.org",
+    "support": {
+        "docs": "https://api-tools.getlaminas.org/documentation",
+        "issues": "https://github.com/laminas-api-tools/api-tools-rest/issues",
+        "source": "https://github.com/laminas-api-tools/api-tools-rest",
+        "rss": "https://github.com/laminas-api-tools/api-tools-rest/releases.atom",
+        "chat": "https://laminas.dev/chat",
+        "forum": "https://discourse.laminas.dev"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "extra": {
+        "laminas": {
+            "module": "Laminas\\ApiTools\\Rest"
+        }
+    },
+    "require": {
+        "php": "^7.3 || ~8.0.0 || ~8.1.0",
+        "laminas-api-tools/api-tools-api-problem": "^1.4.0",
+        "laminas-api-tools/api-tools-content-negotiation": "^1.5.0",
+        "laminas-api-tools/api-tools-hal": "^1.4",
+        "laminas-api-tools/api-tools-mvc-auth": "^1.6",
+        "laminas/laminas-eventmanager": "^3.2",
+        "laminas/laminas-mvc": "^2.7.14 || ^3.0.2",
+        "laminas/laminas-paginator": "^2.7",
+        "laminas/laminas-stdlib": "^2.7.8 || ^3.3",
+        "laminas/laminas-zendframework-bridge": "^1.0"
+    },
+    "require-dev": {
+        "laminas/laminas-coding-standard": "~2.3.0",
+        "laminas/laminas-escaper": "^2.5.2",
+        "laminas/laminas-http": "^2.5.4",
+        "laminas/laminas-inputfilter": "^2.7.2",
+        "laminas/laminas-servicemanager": "^2.7.6 || ^3.1",
+        "laminas/laminas-uri": "^2.5.2",
+        "laminas/laminas-validator": "^2.8.1",
+        "laminas/laminas-view": "^2.11.3",
+        "phpspec/prophecy-phpunit": "^2.0",
+        "phpunit/phpunit": "^9.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Laminas\\ApiTools\\Rest\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LaminasTest\\ApiTools\\Rest\\": "test/"
+        }
+    },
+    "scripts": {
+        "check": [
+            "@cs-check",
+            "@test"
+        ],
+        "cs-check": "phpcs",
+        "cs-fix": "phpcbf",
+        "test": "phpunit --colors=always",
+        "test-coverage": "phpunit --colors=always --coverage-clover clover.xml"
+    },
+    "replace": {
+        "zfcampus/zf-rest": "^1.5.0"
+    }
+}

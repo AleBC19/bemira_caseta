@@ -1,0 +1,66 @@
+{
+    "name": "laminas-api-tools/api-tools-configuration",
+    "description": "Laminas module providing a REST resource for manipulating configuration",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "laminas",
+        "api-tools",
+        "module",
+        "rest",
+        "config"
+    ],
+    "homepage": "https://api-tools.getlaminas.org",
+    "support": {
+        "docs": "https://api-tools.getlaminas.org/documentation",
+        "issues": "https://github.com/laminas-api-tools/api-tools-configuration/issues",
+        "source": "https://github.com/laminas-api-tools/api-tools-configuration",
+        "rss": "https://github.com/laminas-api-tools/api-tools-configuration/releases.atom",
+        "chat": "https://laminas.dev/chat",
+        "forum": "https://discourse.laminas.dev"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laminas": {
+            "module": "Laminas\\ApiTools\\Configuration"
+        }
+    },
+    "require": {
+        "php": "^7.3 || ~8.0.0 || ~8.1.0",
+        "laminas/laminas-config": "^2.6 || ^3.0",
+        "laminas/laminas-modulemanager": "^2.7.1",
+        "laminas/laminas-stdlib": "^2.7.7 || ^3.0.1"
+    },
+    "require-dev": {
+        "container-interop/container-interop": "^1.1",
+        "laminas/laminas-coding-standard": "~2.2.0",
+        "phpunit/phpunit": "^9.3",
+        "psalm/plugin-phpunit": "^0.13.0",
+        "vimeo/psalm": "^4.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Laminas\\ApiTools\\Configuration\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LaminasTest\\ApiTools\\Configuration\\": "test/"
+        }
+    },
+    "scripts": {
+        "check": [
+            "@cs-check",
+            "@test"
+        ],
+        "cs-check": "phpcs",
+        "cs-fix": "phpcbf",
+        "static-analysis": "psalm --shepherd --stats",
+        "test": "phpunit --colors=always",
+        "test-coverage": "phpunit --colors=always --coverage-clover clover.xml"
+    },
+    "conflict": {
+        "zfcampus/zf-configuration": "*"
+    }
+}

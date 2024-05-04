@@ -1,0 +1,9 @@
+!data/cache/.gitkeep
+.vagrant/
+/phpunit.xml
+.phpunit.result.cache
+.phpcs-cache
+.htaccess
+public/.htaccess
+config/application.config.php
+config/development.config.php

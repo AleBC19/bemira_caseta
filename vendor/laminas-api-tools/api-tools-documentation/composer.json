@@ -1,0 +1,76 @@
+{
+    "name": "laminas-api-tools/api-tools-documentation",
+    "description": "Laminas API Tools API documentation module",
+    "keywords": [
+        "laminas",
+        "api-tools",
+        "module",
+        "documentation"
+    ],
+    "homepage": "https://api-tools.getlaminas.org",
+    "license": "BSD-3-Clause",
+    "extra": {
+        "laminas": {
+            "module": "Laminas\\ApiTools\\Documentation"
+        }
+    },
+    "require": {
+        "php": "^7.4 || ~8.0.0 || ~8.1.0",
+        "laminas-api-tools/api-tools-configuration": "^1.5",
+        "laminas-api-tools/api-tools-content-negotiation": "^1.7",
+        "laminas-api-tools/api-tools-provider": "^1.5",
+        "laminas/laminas-inputfilter": "^2.13",
+        "laminas/laminas-modulemanager": "^2.11",
+        "laminas/laminas-mvc": "^3.3",
+        "laminas/laminas-servicemanager": "^3.8",
+        "laminas/laminas-view": "^2.13",
+        "michelf/php-markdown": "^1.5"
+    },
+    "conflict": {
+        "zfcampus/zf-apigility-documentation": "*"
+    },
+    "require-dev": {
+        "laminas/laminas-coding-standard": "~2.3.0",
+        "laminas/laminas-stdlib": "^3.6.4",
+        "phpunit/phpunit": "^9.5.10",
+        "vimeo/psalm": "^4.7",
+        "psalm/plugin-phpunit": "^0.16.0",
+        "webmozart/assert": "^1.10",
+        "laminas/laminas-db": "^2.13.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Laminas\\ApiTools\\Documentation\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LaminasTest\\ApiTools\\Documentation\\": "test/"
+        }
+    },
+    "scripts": {
+        "check": [
+            "@cs-check",
+            "@test"
+        ],
+        "cs-check": "phpcs",
+        "cs-fix": "phpcbf",
+        "static-analysis": "psalm --shepherd --stats",
+        "test": "phpunit --colors=always",
+        "test-coverage": "phpunit --colors=always --coverage-clover clover.xml"
+    },
+    "support": {
+        "issues": "https://github.com/laminas-api-tools/api-tools-documentation/issues",
+        "forum": "https://discourse.laminas.dev",
+        "chat": "https://laminas.dev/chat",
+        "source": "https://github.com/laminas-api-tools/api-tools-documentation",
+        "docs": "https://api-tools.getlaminas.org/documentation",
+        "rss": "https://github.com/laminas-api-tools/api-tools-documentation/releases.atom"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "composer/package-versions-deprecated": true
+        }
+    }
+}

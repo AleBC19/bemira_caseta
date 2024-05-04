@@ -1,0 +1,71 @@
+{
+    "name": "laminas-api-tools/api-tools-versioning",
+    "description": "Laminas Module providing listeners and route prototypes for implementing API versioning",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "laminas",
+        "api-tools",
+        "module",
+        "rest"
+    ],
+    "homepage": "https://api-tools.getlaminas.org",
+    "support": {
+        "docs": "https://api-tools.getlaminas.org/documentation",
+        "issues": "https://github.com/laminas-api-tools/api-tools-versioning/issues",
+        "source": "https://github.com/laminas-api-tools/api-tools-versioning",
+        "rss": "https://github.com/laminas-api-tools/api-tools-versioning/releases.atom",
+        "chat": "https://laminas.dev/chat",
+        "forum": "https://discourse.laminas.dev"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "extra": {
+        "laminas": {
+            "module": "Laminas\\ApiTools\\Versioning"
+        }
+    },
+    "require": {
+        "php": "^7.3 || ~8.0.0 || ~8.1.0",
+        "laminas/laminas-eventmanager": "^3.2",
+        "laminas/laminas-http": "^2.5.4",
+        "laminas/laminas-modulemanager": "^2.7.2",
+        "laminas/laminas-mvc": "^2.7.15 || ^3.0.2",
+        "laminas/laminas-servicemanager": "^2.7.6 || ^3.1",
+        "laminas/laminas-stdlib": "^2.7.7 || ^3.0.1"
+    },
+    "require-dev": {
+        "laminas/laminas-coding-standard": "~2.3.0",
+        "phpspec/prophecy-phpunit": "^2.0",
+        "phpunit/phpunit": "^9.5",
+        "psalm/plugin-phpunit": "^0.16.1",
+        "vimeo/psalm": "^4.13.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Laminas\\ApiTools\\Versioning\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LaminasTest\\ApiTools\\Versioning\\": "test/"
+        }
+    },
+    "scripts": {
+        "check": [
+            "@cs-check",
+            "@test"
+        ],
+        "cs-check": "phpcs",
+        "cs-fix": "phpcbf",
+        "static-analysis": "psalm --shepherd --stats",
+        "test": "phpunit --colors=always",
+        "test-coverage": "phpunit --colors=always --coverage-clover clover.xml"
+    },
+    "conflict": {
+        "zfcampus/zf-versioning": "*"
+    }
+}
